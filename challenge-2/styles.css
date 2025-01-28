@@ -12,99 +12,114 @@
 }
 
 body {
+  background-color: var(--text-dark);
 }
 
 .hero {
+  width: 100%;
+  height: auto;
 }
 
 .hero-grid {
+  /* background-color: #3b82f6; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 250px;
+}
+
+.content-col {
+  width: 795px;
 }
 
 .content-col h1 {
+  font-size: 90px;
 }
 
 .content-col p {
+  font-size: 35px;
 }
 
 .cta-group {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* background-color: red; */
+  padding: 20px 20px 20px 0;
+  width: 100%;
 }
 
 .sr-only {
+  display: none;
 }
 
 .input-wrapper {
+  /* flex: 10; */
+  width: 70%;
+  padding: 20px 20px 20px 0;
 }
 
 input[type='text'] {
+  flex: 1;
+  width: 70%;
+  padding: 20px 80px;
 }
 
 .demo-button {
+  width: 25%;
+  padding: 20px;
 }
 
-.demo-button:hover {
-}
+.demo-button:hover {}
 
-.brands-section {
-}
+.brands-section {}
 
-.trusted-by {
-}
+.trusted-by {}
 
 .brand-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
 }
 
-.brand-logo {
-}
+.brand-logo {}
 
-.image-col {
-}
+.image-col {}
 
-.hero-image {
-}
+.hero-image {}
 
 @media (min-width: 640px) {
-  .hero {
-  }
+  .hero {}
 
-  .content-col h1 {
-  }
+  .content-col h1 {}
 
-  .cta-group {
-  }
+  .cta-group {}
 
-  .demo-button {
-  }
+  .demo-button {}
 
-  .input-wrapper {
-  }
+  .input-wrapper {}
 
-  input[type='text'] {
-  }
+  input[type='text'] {}
 }
 
 @media (min-width: 768px) {
-  .content-col h1 {
-  }
+  .content-col h1 {}
 }
 
 @media (min-width: 1024px) {
-  .hero {
-  }
+  .hero {}
 
-  .hero-grid {
-  }
+  .hero-grid {}
 
-  .content-col h1 {
-  }
+  .content-col h1 {}
 
-  .cta-group {
-  }
+  .cta-group {}
 
-  .brands-section {
-  }
+  .brands-section {}
 
-  .image-col {
-  }
+  .image-col {}
 }
 
 @media (min-width: 1280px) {
@@ -113,23 +128,16 @@ input[type='text'] {
   }
 }
 
-.dark-mode-toggle {
-}
+.dark-mode-toggle {}
 
-.dark-mode-toggle:hover {
-}
+.dark-mode-toggle:hover {}
 
-body.dark {
-}
+body.dark {}
 
-.dark-mode-toggle {
-}
+.dark-mode-toggle {}
 
-.dark-mode-toggle:hover {
-}
+.dark-mode-toggle:hover {}
 
-input[type='text'].dark {
-}
+input[type='text'].dark {}
 
-input[type='text']::placeholder {
-}
+input[type='text']::placeholder {}
