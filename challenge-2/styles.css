@@ -13,6 +13,9 @@
 
 body {
   background-color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 250px; */
 }
 
 .hero {
@@ -23,21 +26,29 @@ body {
 .hero-grid {
   /* background-color: #3b82f6; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 80px 250px;
+  padding: 80px 100px;
+  
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  
 }
 
 .content-col {
-  width: 795px;
+  width: 1000px;
+  height: auto;
 }
 
 .content-col h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-size: 90px;
 }
 
 .content-col p {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .cta-group {
@@ -46,7 +57,7 @@ body {
   align-items: center;
   /* flex-wrap: wrap; */
   /* background-color: red; */
-  padding: 20px 20px 20px 0;
+  padding: 0 20px 20px 0;
   width: 100%;
 }
 
@@ -58,24 +69,38 @@ body {
   /* flex: 10; */
   width: 70%;
   padding: 20px 20px 20px 0;
+  height: 66px;
 }
 
 input[type='text'] {
   flex: 1;
   width: 70%;
-  padding: 20px 80px;
+  padding: 20px 80px 20px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 8px;
+  font-size: 20px;
 }
 
 .demo-button {
-  width: 25%;
+  width: 29%;
+  height: 66px;
   padding: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #578de6;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .demo-button:hover {}
 
 .brands-section {}
 
-.trusted-by {}
+.trusted-by {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
 
 .brand-logos {
   display: flex;
@@ -86,9 +111,17 @@ input[type='text'] {
 
 .brand-logo {}
 
-.image-col {}
+.image-col {
+  width: 1000px;
+}
 
-.hero-image {}
+.hero-image {
+  width: 1000px;
+  height: 600px;
+  object-fit: cover;
+  border: none;
+  border-radius: 15px;
+}
 
 @media (min-width: 640px) {
   .hero {}
@@ -128,7 +161,26 @@ input[type='text'] {
   }
 }
 
-.dark-mode-toggle {}
+.firstbtn {
+  display: flex;
+  padding-right: 100px;
+  /* background-color: #2563eb; */
+}
+
+.dark-mode-toggle {
+  width: 9%;
+  margin: auto;
+  margin-top: 80px;
+  margin-right: 0;
+  height: 55px;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #2563eb;
+  font-size: 15px;
+}
 
 .dark-mode-toggle:hover {}
 
@@ -141,3 +193,19 @@ body.dark {}
 input[type='text'].dark {}
 
 input[type='text']::placeholder {}
+
+.content-col, .image-col {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0;  /* Optional, depending on your layout */
+  border: none;  /* Optional, to avoid any borders */
+}
