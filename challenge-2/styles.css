@@ -29,11 +29,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 80px 100px;
-  
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  
+
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
 }
 
 .content-col {
@@ -53,7 +53,7 @@ body {
 
 .cta-group {
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-around;
   align-items: center;
   /* flex-wrap: wrap; */
   /* background-color: red; */
@@ -66,15 +66,15 @@ body {
 }
 
 .input-wrapper {
-  /* flex: 10; */
+  flex: 10;
   width: 70%;
   padding: 20px 20px 20px 0;
   height: 66px;
 }
 
 input[type='text'] {
-  flex: 1;
-  width: 70%;
+  /* flex: 1; */
+  width: 75%;
   padding: 20px 80px 20px 20px;
   border: 1px solid rgba(128, 128, 128, 0.527);
   border-radius: 8px;
@@ -123,22 +123,97 @@ input[type='text'] {
   border-radius: 15px;
 }
 
-@media (min-width: 640px) {
-  .hero {}
-
-  .content-col h1 {}
-
-  .cta-group {}
-
-  .demo-button {}
-
-  .input-wrapper {}
-
-  input[type='text'] {}
+@media (min-width: 100px) and (max-width: 426px) {
+  .firstbtn .dark-mode-toggle {
+    width: 35%;
+  }
+  .content-col h1 {
+    font-size: 50px;
+  }
+  .content-col p {
+    font-size: 15px;
+  }
 }
 
-@media (min-width: 768px) {
-  .content-col h1 {}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-col h1 {
+    font-size: 70px;
+  }
+
+  .content-col p {
+    font-size: 20px;
+  }
+
+  .cta-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* background-color: red; */
+    padding: 0;
+    width: 97%;
+    height: 40px;
+  }
+
+  .input-wrapper {
+    flex: 10;
+    width: 70%;
+    padding: 0;
+    height: 40px;
+  }
+
+  input[type='text'] {
+    width: 95%;
+    padding: 11px 0 11px 12px;
+    border: 0.5px solid rgba(128, 128, 128, 0.527);
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  .demo-button {
+    width: 29%;
+    height: 42px;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    background-color: #578de6;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .trusted-by {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: medium;
+  }
+
+  .brand-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .image-col {
+    display: none;
+  }
+
+  .hero-image {}
+
+  .resp-img {
+    background-image: url('assets/hero.avif');
+    background-size: cover;
+    /* Ensures the image covers the entire element */
+    background-position: center;
+    /* Centers the image */
+    height: 300px;
+    /* Example height */
+
+    border: none;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -155,7 +230,7 @@ input[type='text'] {
   .image-col {}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .hero-grid {
     gap: 3rem;
   }
@@ -168,7 +243,7 @@ input[type='text'] {
 }
 
 .dark-mode-toggle {
-  width: 9%;
+  width: 35%;
   margin: auto;
   margin-top: 80px;
   margin-right: 0;
@@ -179,7 +254,7 @@ input[type='text'] {
   border-radius: 8px;
   color: #ffffff;
   background-color: #2563eb;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .dark-mode-toggle:hover {}
@@ -194,7 +269,8 @@ input[type='text'].dark {}
 
 input[type='text']::placeholder {}
 
-.content-col, .image-col {
+.content-col,
+.image-col {
   width: 100%;
   max-width: 100%;
 }
@@ -202,10 +278,12 @@ input[type='text']::placeholder {}
 .hero-image {
   width: 100%;
   max-width: 100%;
-
   height: auto;
+  min-height: 600px;
   object-fit: cover;
   display: block;
-  margin: 0;  /* Optional, depending on your layout */
-  border: none;  /* Optional, to avoid any borders */
+  margin: 0;
+  /* Optional, depending on your layout */
+  border: none;
+  /* Optional, to avoid any borders */
 }
