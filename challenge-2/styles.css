@@ -11,6 +11,11 @@
   --border-dark: #374151;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: var(--text-dark);
   display: flex;
@@ -20,7 +25,7 @@ body {
 
 .hero {
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .hero-grid {
@@ -28,7 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 100px;
+  padding: 50px 100px;
 
   width: 100%;
   max-width: 100%;
@@ -90,6 +95,7 @@ input[type='text'] {
   background-color: #578de6;
   color: #ffffff;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .demo-button:hover {}
@@ -98,7 +104,7 @@ input[type='text'] {
 
 .trusted-by {
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 
@@ -109,27 +115,31 @@ input[type='text'] {
   gap: 80px;
 }
 
-.brand-logo {}
+.brand-logo {
+  width: 100px;
+}
 
 .image-col {
   width: 1000px;
 }
 
-.hero-image {
+/* .hero-image {
   width: 1000px;
   height: 600px;
   object-fit: cover;
   border: none;
   border-radius: 15px;
-}
+} */
 
 @media (min-width: 100px) and (max-width: 426px) {
   .firstbtn .dark-mode-toggle {
     width: 35%;
   }
+
   .content-col h1 {
     font-size: 50px;
   }
+
   .content-col p {
     font-size: 15px;
   }
@@ -245,21 +255,27 @@ input[type='text'] {
 .dark-mode-toggle {
   width: 35%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-right: 0;
-  height: 55px;
+  height: 50px;
   justify-content: flex-end;
   align-items: center;
   border: none;
   border-radius: 8px;
   color: #ffffff;
   background-color: #2563eb;
-  font-size: 14px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .dark-mode-toggle:hover {}
 
-body.dark {}
+body.dark {
+  background-color: #111827;
+  /* Dark background */
+  color: #fff;
+  /* Light text color */
+}
 
 .dark-mode-toggle {}
 
@@ -279,11 +295,12 @@ input[type='text']::placeholder {}
   width: 100%;
   max-width: 100%;
   height: auto;
-  min-height: 600px;
+  min-height: 500px;
   object-fit: cover;
   display: block;
   margin: 0;
   /* Optional, depending on your layout */
   border: none;
   /* Optional, to avoid any borders */
+  border-radius: 15px;
 }
